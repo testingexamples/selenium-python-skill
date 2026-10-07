@@ -108,7 +108,7 @@ walkthrough to real test" below.
 
 This is real, verified working code (from
 https://github.com/testingexamples/demo-selenium-python) targeting the free fixture
-page https://testingexamples.github.io, which exists specifically to be automated
+page https://testingexamples.github.io/en-001/practice/, which exists specifically to be automated
 against:
 
 ```python
@@ -121,7 +121,7 @@ def demo() -> None:
     driver = webdriver.Chrome()
 
     try:
-        driver.get("https://testingexamples.github.io")
+        driver.get("https://testingexamples.github.io/en-001/practice/")
 
         # Find an element by id.
         element_by_id = driver.find_element(By.ID, "id-example-1")
@@ -201,7 +201,7 @@ def driver():
 
 
 def test_id_example_has_expected_text(driver):
-    driver.get("https://testingexamples.github.io")
+    driver.get("https://testingexamples.github.io/en-001/practice/")
     element = driver.find_element(By.ID, "id-example-1")
     assert element.text == "Id Example 1"
 ```
@@ -233,7 +233,7 @@ https://github.com/joelparkerhenderson/demo-selenium-python-for-nhs-wales.
 ## Learn more / real examples
 
 - https://github.com/testingexamples/demo-selenium-python — locator-strategy
-  walkthrough against https://testingexamples.github.io (the generic target; safe to
+  walkthrough against https://testingexamples.github.io/en-001/practice/ (the generic target; safe to
   run against repeatedly).
 - https://github.com/testingexamples/demo-selenium-python-for-google-search — same
   patterns against Google Search. **Illustrative only** — Google's Terms of Service
@@ -246,7 +246,7 @@ https://github.com/joelparkerhenderson/demo-selenium-python-for-nhs-wales.
   pytest test suite with real assertions against https://www.nhs.wales/.
 - https://www.selenium.dev/documentation/webdriver/ — official WebDriver
   documentation.
-- https://testingexamples.github.io/ — the free fixture page these demos target,
+- https://testingexamples.github.io/en-001/practice/ — the free fixture page these demos target,
   safe to run against repeatedly.
 
 ---
